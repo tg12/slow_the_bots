@@ -2,10 +2,10 @@ import re
 import os
 import errno
 
-size_kb = 512000  # 10 MB
+size_kb = 512000000  # 10 MB
 # commonly accessed files, php, js etc....
 #regex = r"\b[^\s<>]*?.php\b"
-regex = r"\b[^\s<>]*?.(php|js|html|css|pdf|cgi|txt)\b"
+regex = r"\b[^\s<>]*?.(php|js|html|css|pdf|cgi|txt|xml)\b"
 base_dir = "/var/www/html/"
 
 with open('/var/log/apache2/access.log', 'r') as access_log:
